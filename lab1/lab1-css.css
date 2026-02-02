@@ -1,0 +1,118 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.teamFigure {
+
+    width: 15%;
+    text-align: center;
+}
+
+.teamImage {
+    border: 3px solid black;
+    height: auto;
+    border-radius: 50px;
+    width: 100%;
+}
+
+.teamCaption {
+    font-size: max(2vw, 4vw);
+}
+
+body {
+    background-color: rgb(6, 3, 79);
+}
+
+section {
+    background-color: grey;
+}
+
+h1 {
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    background-color: rgb(6, 3, 79);
+
+}
+
+footer {
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    background-color: rgb(6, 3, 79);
+}
+
+nav {
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: rgb(198, 123, 25);
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 6px;
+    border-radius: 4px;
+    background-color: black;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+#aboutSection {
+    text-align: center;
+    color: white;
+}
+
+table {
+    margin: 0 auto;
+    color: white;
+}
+
+/* li{
+    text-align: center;
+    color: white;
+ } */
+
+#hobbiesList {
+    margin: 0 auto;
+    width: 20%;
+}
+
+.table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    height: auto;
+    width: 50%;
+}
+
+.tableHeader {
+    background-color: black;
+}
+
+.tableHeader strong {
+    color: white;
+}
+
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
