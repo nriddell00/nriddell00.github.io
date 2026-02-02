@@ -116,3 +116,10 @@ body {
   font-variation-settings:
     "wdth" 100;
 }
+
+nav a:hover { 
+    background-color: #0055aa; 
+}
+nav a.active { 
+    font-weight: bold; background: white; color: black;
+}
