@@ -1,0 +1,119 @@
+h1{
+    text-align: center;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: black;
+}
+
+body{
+    background-color: rgb(157, 94, 229);
+    color: white;
+    text-align: center;
+}
+
+div{
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+#active{
+    font-weight: bold;
+    background-color: lightblue;
+    color: black;
+}
+
+.sourceLink{
+    color: rgb(35, 214, 167);
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.cyberAttackFig img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+p{
+    font-size: 18px;
+}
+
+li{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#defenseList{
+    padding-left: 30%;
+    text-align: left;
+}
+
+#osiModelImg{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+#cyberDefenseImg{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+#osiModelFigCaption{
+    font-size: 20px;
+    color: black;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.topics{
+    font-weight: bold;
+    color: black;
+}
+
+.header{
+    color: black;
+}
+
+q{
+    font-style: italic;
+    font-size: 25px;
+    color: black;
+}
+
+#cyberImg{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 25px;
+}
