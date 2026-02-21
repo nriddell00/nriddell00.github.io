@@ -1,71 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 3: Quiz</title>
     <script src="js/script.js" defer></script>
     <script src="https://unpkg.com/underscore@1.13.7/underscore-umd-min.js"></script>
-
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    
+
 
     <h1>Lab 3: Pokemon Quiz</h1>
 
+    <div id="q1Div"></div>
     1. What is the first Pokemon?
     <!-- <label><input type="radio" name="q1" value="color"> color</label>
-    <label><input type="radio" name="q1" value="font-color"> font-color</label>
-    <label><input type="radio" name="q1" value="text-color"> text-color</label> -->
-
+        <label><input type="radio" name="q1" value="font-color"> font-color</label>
+        <label><input type="radio" name="q1" value="text-color"> text-color</label> -->
+    <span id="q1Result">
+        <img src="./imgs/Green_check.png" class="correct">
+        <img src="./imgs/Red_X.png" class="incorrect">
+        <span id="q1Text"></span>
+    </span>
 
     <div id="q1ChoicesDiv"></div>
+    </div>
+
+
 
     <br>
 
     <div id="q2Div">
-    2. What is the first region in the Pokemon world?
-    <br>
-    <label>
-        <input id="q2" type="text">
-    </label>
+        2. What is the first region in the Pokemon world?
+        <span id="q2Result">
+            <img src="./imgs/Green_check.png" class="correct">
+            <img src="./imgs/Red_X.png" class="incorrect">
+            <span id="q2Text"></span>
+        </span>
+        <br>
+        <label>
+            <input id="q2" type="text">
+        </label>
     </div>
     <br>
 
     <div id="q3Div">
-    3. Which type is Fire weak against?
-    <br>
-    <label>
-        <select id="q3">
-        <option>Grass</option>
-        <option>Ground</option>
-        <option>Water</option>
-    </select>
-    </label>
+        3. Which type is Fire weak against?
+        <span id="q3Result">
+            <img src="./imgs/Green_check.png" class="correct">
+            <img src="./imgs/Red_X.png" class="incorrect">
+            <span id="q3Text"></span>
+        </span>
+        <br>
+        <label>
+            <select id="q3">
+                <option>Grass</option>
+                <option>Ground</option>
+                <option>Water</option>
+            </select>
+        </label>
     </div>
     <br>
 
     <div id="q4Div">
-    4. How many Pokemon are in the First Generation?
-    <br>
+        4. How many Pokemon are in the First Generation?
+        <span id="q4Result">
+            <img src="./imgs/Green_check.png" class="correct">
+            <img src="./imgs/Red_X.png" class="incorrect">
+            <span id="q4Text"></span>
+        </span>
+        <br>
 
-    <label>
-    <input id="q4" type="number" min="1" max="300" step="1">
-    </label>
+        <label>
+            <input id="q4" type="number" min="1" max="300" step="1">
+        </label>
 
     </div>
     <br>
 
     <div id="q5Div">
-    5. Which of the following is not a Pokemon type?
-    <br>
-    <label><input type="checkbox" name="q5" value="Ground"> Ground</label>
-    <label><input type="checkbox" name="q5" value="Grass"> Grass</label>
-    <label><input type="checkbox" name="q5" value="Earth"> Earth</label>
-    <br>
+        5. Which of the following is not a Pokemon type?
+        <span id="q5Result">
+            <img src="./imgs/Green_check.png" class="correct">
+            <img src="./imgs/Red_X.png" class="incorrect">
+            <span id="q5Text"></span>
+        </span>
+        <br>
+        <label><input type="checkbox" name="q5" value="Ground"> Ground</label>
+        <label><input type="checkbox" name="q5" value="Grass"> Grass</label>
+        <label><input type="checkbox" name="q5" value="Earth"> Earth</label>
+        <br>
     </div>
     <button>Submit Quiz</button>
 
+    <div id="finalScore">
+        Score: <span id="score"></span>/100
+        <span id="finalMessage"></span>
+    </div>
+
+    <br>
+
+    <div id="attemptsDiv">
+        Attempts:
+        <span id="attempts">0</span>
+    </div>
 
 </body>
+
 </html>

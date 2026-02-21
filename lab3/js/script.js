@@ -2,6 +2,9 @@
 
 document.querySelector("button").addEventListener("click", gradeQuiz);
 
+let attempts = Number(localStorage.getItem("attempts")) || 0;
+document.querySelector("#attempts").textContent = attempts;
+
 shuffleQ1Choices()
 function shuffleQ1Choices(){
     let q1choices = ["Bulbasaur", "Charmander", "Squirtle", "Pikachu"];
@@ -45,11 +48,15 @@ function gradeQuiz() {
         //display "Right"
         // alert("Right");
         score += 20;
-        document.querySelector("#q1ChoicesDiv").style.backgroundColor = "lightgreen";
+        document.querySelector("#q1Result .correct").style.display = "inline";
+        document.querySelector("#q1Text").textContent = "Correct!";
+        document.querySelector("#q1Text").style.color = "limegreen";
     } else {
         //display "Wrong"
         // alert("Wrong");
-        document.querySelector("#q1ChoicesDiv").style.backgroundColor = "salmon";
+        document.querySelector("#q1Result .incorrect").style.display = "inline";
+        document.querySelector("#q1Text").textContent = "Incorrect!";
+        document.querySelector("#q1Text").style.color = "red";
         score += 0;
     }
 
@@ -57,11 +64,15 @@ function gradeQuiz() {
         //display "Right"
         // alert("Right");
         score += 20;
-        document.querySelector("#q2Div").style.backgroundColor = "lightgreen";
+        document.querySelector("#q2Result .correct").style.display = "inline";
+        document.querySelector("#q2Text").textContent = "Correct!";
+        document.querySelector("#q2Text").style.color = "limegreen";
     } else {
         //display "Wrong"
         // alert("Wrong");
-        document.querySelector("#q2Div").style.backgroundColor = "salmon";
+        document.querySelector("#q2Result .incorrect").style.display = "inline";
+        document.querySelector("#q2Text").textContent = "Incorrect!";
+        document.querySelector("#q2Text").style.color = "red";
         score += 0;
     }
 
@@ -69,11 +80,15 @@ function gradeQuiz() {
         //display "Right"
         // alert("Right");
         score += 20;
-        document.querySelector("#q3Div").style.backgroundColor = "lightgreen";
+        document.querySelector("#q3Result .correct").style.display = "inline";
+        document.querySelector("#q3Text").textContent = "Correct!";
+        document.querySelector("#q3Text").style.color = "limegreen";
     } else {
         //display "Wrong"
         // alert("Wrong"); 
-        document.querySelector("#q3Div").style.backgroundColor = "salmon";
+        document.querySelector("#q3Result .incorrect").style.display = "inline";
+        document.querySelector("#q3Text").textContent = "Incorrect!";
+        document.querySelector("#q3Text").style.color = "red";
         score += 0;
     }
 
@@ -81,11 +96,15 @@ function gradeQuiz() {
         //display "Right"
         // alert("Right");
         score += 20;
-        document.querySelector("#q4Div").style.backgroundColor = "lightgreen";
+        document.querySelector("#q4Result .correct").style.display = "inline";
+        document.querySelector("#q4Text").textContent = "Correct!";
+        document.querySelector("#q4Text").style.color = "limegreen";
     } else {
         //display "Wrong"
         // alert("Wrong");
-        document.querySelector("#q4Div").style.backgroundColor = "salmon";
+        document.querySelector("#q4Result .incorrect").style.display = "inline";
+        document.querySelector("#q4Text").textContent = "Incorrect!";
+        document.querySelector("#q4Text").style.color = "red";
         score += 0;
     }   
    
@@ -93,13 +112,30 @@ function gradeQuiz() {
         //display "Right"
         // alert("Right");
         score += 20;
-        document.querySelector("#q5Div").style.backgroundColor = "lightgreen";
+        document.querySelector("#q5Result .correct").style.display = "inline";
+        document.querySelector("#q5Text").textContent = "Correct!";
+        document.querySelector("#q5Text").style.color = "limegreen";
     } else {
         //display "Wrong"
         // alert("Wrong");
-        document.querySelector("#q5Div").style.backgroundColor = "salmon";
+        document.querySelector("#q5Result .incorrect").style.display = "inline";
+        document.querySelector("#q5Text").textContent = "Incorrect!";
+        document.querySelector("#q5Text").style.color = "red";
         score += 0;
     }
 
-    alert("Your score is: " + score);
+    document.querySelector("#score").textContent = score;
+    let message = document.querySelector("#finalMessage");
+    if (score >= 80) {
+        message.textContent = "Great job, you passed!";
+        message.style.color = "limegreen";
+    }
+    else {
+        message.textContent = "Better luck next time!";
+        message.style.color = "red";
+    }
+
+    attempts++;
+    localStorage.setItem("attempts", attempts);
+    document.querySelector("#attempts").textContent = attempts;
 }

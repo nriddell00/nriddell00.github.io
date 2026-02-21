@@ -1,0 +1,49 @@
+.correct{
+    display: none;
+    width: 25px;
+    height: 25px;
+}
+.incorrect{
+    display: none;
+    width: 25px;
+    height: 25px;
+}
+#q1Result, #q2Result, #q3Result, #q4Result, #q5Result{
+    margin-left: 6px;
+    font-weight: bold;
+}
+
+#score{
+    font-size: 24px;
+    font-weight: bold;
+}
+#finalMessage{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding: 20px;
+    background: linear-gradient(to right, #1b1027, #402455);
+    color: white;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#q1Div, #q2Div, #q3Div, #q4Div, #q5Div{
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+#finalScore, #attemptsDiv{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
