@@ -20,7 +20,6 @@ async function displayStates() {
         }
         const data = await response.json();
         console.log(data);
-        //    alert(data[0].state);
         for (let i of data) {
             let optionEl = document.createElement("option");
             optionEl.textContent = i.state;
@@ -41,7 +40,6 @@ async function displayStates() {
 }
 
 async function displayCity() {
-    // alert("Displaying city...");
 
     let zipCode = zipElement.value;
     let url = "https://csumb.space/api/cityInfoAPI.php?zip=" + zipCode;
