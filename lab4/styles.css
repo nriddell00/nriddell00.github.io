@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: #333;
+}
+
+fieldset {
+    width: 450px;
+    margin: 30px auto;
+    padding: 20px 25px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #357abd;
+}
+
+#city, #latitude, #longitude {
+    font-weight: bold;
+    color: #333;
+    font-size: medium;
+}
+
+#zipError {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#availableUsername {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#suggestedPassword {
+    margin-left: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+#checkPassword {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+br {
+    line-height: 2;
+}
+
+input:hover {
+    border-color: #888;
+}
+
+select:hover {
+    border-color: #888;
+}
+
+fieldset label {
+    font-weight: 600;
+}
+
+fieldset input,
+fieldset select {
+    font-size: 14px;
+}
+
+fieldset span {
+    font-size: 13px;
+}
+
+fieldset input[type="submit"]:active {
+    transform: scale(0.98);
+}

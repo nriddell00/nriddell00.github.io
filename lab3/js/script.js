@@ -139,3 +139,5 @@ function gradeQuiz() {
     localStorage.setItem("attempts", attempts);
     document.querySelector("#attempts").textContent = attempts;
 }
+
+q3
